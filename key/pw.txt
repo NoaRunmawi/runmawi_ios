@@ -1,0 +1,4 @@
+Password for Android Studio build
+storePassword=Runmawi@123
+keyPassword=Runmawi@123#
+keyAlias=key0
