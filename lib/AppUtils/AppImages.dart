@@ -1,0 +1,32 @@
+class AppImages{
+  static const imageCommonPath = "assets/Images";
+  static const splashImagePath = "$imageCommonPath/Splash.png";
+  static const commonBackgroundPath = "$imageCommonPath/Ic_background.png";
+  static const circleAnimation = "$imageCommonPath/whiteCircle.png";
+  static const appIconImage = "$imageCommonPath/AppIcon.png";
+  static const socialGoogleIcon = "$imageCommonPath/Ic_google.png";
+  static const socialAppleIcon = "$imageCommonPath/Ic_apple.png";
+  static const socialFacebookIcon = "$imageCommonPath/Ic_facebook.png";
+  static const barBackImage = "$imageCommonPath/Ic_back2.png";
+  static const demoMovieImage = "$imageCommonPath/Ic_demoMovieImage.png";
+  static const icPlayImage = "$imageCommonPath/Ic_mediaPlayer.png";
+  static const icTransactionImage = "$imageCommonPath/Ic_transcation.png";
+  static const icBottomHome = "$imageCommonPath/ic_home.png";
+  static const icBottomMovie = "$imageCommonPath/Ic_movie.png";
+  static const icBottomTv = "$imageCommonPath/Ic_tv.png";
+  static const icTvImage = "$imageCommonPath/Ic_tvKey.png";
+  static const icDrawerBackground = "$imageCommonPath/Ic_drawerBackground.png";
+  static const icEditIcon = "$imageCommonPath/Ic_editIcon.png";
+  static const icDrawerTV = "$imageCommonPath/Ic_drawerTv.png";
+  static const icDrawerRental = "$imageCommonPath/Ic_DrawerBrowser.png";
+  static const  icDrawerSavedMooiveIcon = "$imageCommonPath/ic_save.png";
+  static const  icDrawerDarkSavedMooiveIcon = "$imageCommonPath/ic_savedMovie.png";
+  static const icDrawerTransCation = "$imageCommonPath/Ic_drawerTransction.png";
+  static const icDrawerFaq = "$imageCommonPath/Ic_drawerFaq.png";
+  static const icDrawerAbout = "$imageCommonPath/Ic_drawerAbout.png";
+  static const icDrawerContact = "$imageCommonPath/Ic_drawerContact.png";
+  static const icDrawerPrivacy = "$imageCommonPath/Ic_DrawerPolicy.png";
+  static const icDrawerTerms = "$imageCommonPath/Ic_DrawerTerms.png";
+  static const icDrawerPayments = "$imageCommonPath/Ic_drawerPayments.png";
+  static const icDrawerLogout = "$imageCommonPath/Ic_Drawerlogout.png";
+}
