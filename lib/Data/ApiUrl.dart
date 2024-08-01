@@ -6,4 +6,5 @@ class AppUrl {
   static var aboutUs = "https://runmawi.in/page.php?id=aboutus";
   static var contactUs = "https://runmawi.in/page.php?id=contactus";
   static var Faq = "https://runmawi.in/page.php?id=faq";
+  static var deleteurl="https://runmawi.in/web/user_actions/delete_account.php";
 }

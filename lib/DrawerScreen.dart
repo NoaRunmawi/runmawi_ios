@@ -11,6 +11,7 @@ import 'package:runmawi/SavedMovieList.dart';
 import 'package:runmawi/SignInScreen.dart';
 import 'package:runmawi/TransactionHistory.dart';
 import 'package:runmawi/Webview.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DrawerScreen extends StatelessWidget {
   final VoidCallback refreshCallback;
@@ -52,6 +53,9 @@ class DrawerScreen extends StatelessWidget {
     DrawerListItem(ValueNotifier(false),
         text: "Logout",
         Icon: AppImages.icDrawerLogout),
+    DrawerListItem(ValueNotifier(false),
+        text: "Delete Account",
+        Icon: AppImages.icDrawerContact),
 
   ];
 
@@ -155,7 +159,13 @@ scaffoldKey.currentState!.closeDrawer();
                       }
                       else if(_drawerListItem[i].text.toString()=="Logout"){
                         _showLogoutButton(context);
-                      }else{
+                      }
+                      // external browser a luh na tur
+                      else if (_drawerListItem[i].text.toString() == "Delete Account") {
+                        openUrl();
+                      }
+
+                      else{
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>WebViewExample(_drawerListItem[i].text.toString(), getUrl(_drawerListItem[i].text.toString()))));
                       }
                     }
@@ -203,6 +213,18 @@ scaffoldKey.currentState!.closeDrawer();
       ],
     );
   }
+
+  void openUrl() async {
+    const url = 'https://runmawi.in/web/user_actions/delete_account.php';
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+
+
   Future<void> _showLogoutButton(BuildContext context)async{
     showDialog(
         context: context,
@@ -293,7 +315,8 @@ return AppUrl.contactUs;
     }
     else if(type.toString()=="About"){
   return AppUrl.aboutUs;
-    }else {
+    }
+ else {
   return AppUrl.Faq;
     }
   }
